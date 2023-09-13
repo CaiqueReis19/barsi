@@ -1,0 +1,45 @@
+#nav-principal li > p {
+    font-size: 50px;
+}
+
+.nav-pills li > #selecionada {
+    background-color: darkblue;
+}
+
+.nav-pills li a:hover {
+    background-color: darkblue;
+}
+
+.mr-5 {
+    margin-right: 9rem
+}
+
+#nav-principal ul li > p {
+    font-weight: bold;
+}
+
+.nav-item > p {
+    margin-right: 9rem;
+}
+
+#nav-lateral a {
+    font-size: 20px;
+}
+
+#nav-lateral div > #titulo-menu {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-header {
+    font-size: 20px;
+}
+
+#btn-salvar span {
+    font-weight: bold;
+}
+
+#form-login > #bem-vindo {
+    font-size: 30px;
+    text-align: center;
+}
