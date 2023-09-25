@@ -22,6 +22,13 @@
     <header><!-- inicio cabeçalho -->
         <nav class="navbar navbar-expand-sm bg-dark navbar-light ">
             <div class="container">
+
+                <div class="float-left" style="margin-inline-start: -150px;"><!--btn hamburguer-->
+                    <button class="toggler bg-dark mr-5" id="menu-hamburguer" data-toggle="collapse" data-target="#nav-lateral-2">
+                        <i class="fa-solid fa-bars fa-2xl " style="color: #ffffff;"></i>
+                    </button>            
+                </div>
+
                 <a href="#" class="navbar-brand">
                     <img src="imagens/logoBarsi.png" width="200">
                 </a>
@@ -47,59 +54,62 @@
 
 <div class="container-fluid" id="container"><!--inicio container-->
     <div class="row flex-nowrap"><!--grid da pagina-->
-            <div class=" bg-primary col-auto col-md-2 min-vh-100 " id="nav-lateral"><!--inicio navegação lateral--> 
-                <div class="bg-primary p-2 sticky-top">
-                    <a id="titulo-menu" class="d-flex mt-1 ml-4 align-itens-center text-white">
-                        <span class="fs-4 d-none d-sm-inline ">MENU</span><br>
-                    </a>
+        <div class=" bg-primary col-auto col-md-2 min-vh-100 float collapse" id="nav-lateral-2"><!--inicio navegação lateral--> 
+            <div class="bg-primary p-2 sticky-top">
 
-                    <img src="./imagens/linha-menu.png" class="mr-5">
-                    <ul class="nav nav-pills flex-column mt-1 ">
-                        <li class="nav-item">
-                            <a href="./home-rh.html" class="nav-link text-white" id="selecionada">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline" >Home</span>
-                            </a>
-                            <a href="./agendar-ferias-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Agendar Férias</span>
-                            </a>
-                            <a href="./folha-de-pagamento-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Folha de Pagamento</span>
-                            </a>
-                            <a href="./pontos-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Histórico <br> de Pontos</span>
-                            </a>
-                            <a href="./holerite-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Holerite</span>
-                            </a>
-                            <a href="./rendimentos-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Informe de Rendimentos</span>
-                            </a>
-                            <a href="./beneficios-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Benefícios</span>
-                            </a>
-                            <a href="./dados-funcionario-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Dados do Funcionário</span>
-                            </a>
-                            <a href="./cadastrar-colaborador-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Cadastrar Colaborador</span>
-                            </a>
-                            <a href="./alterar-colaborador-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Alterar <br> Colaborador</span>
-                            </a>
-                            <a href="./demitir-colaborador-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Demitir Colaborador</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div><!--fim navegação lateral-->
+                <a id="titulo-menu" class="d-flex mt-1 ml-4 align-itens-center text-white">
+                    <span class="fs-4 d-none d-sm-inline" style="font-size: 30px; font-weight: bold;">MENU</span><br>
+                </a>
 
-            <section id="conteudos" class="col-md-10"><!--inicio conteudos-->
-                <div class="col-md-12 offset-md-2 mb-5">
+                <img src="./imagens/linha-menu.png" class="mr-5">
+
+                <ul class="nav nav-pills flex-column mt-1">
+                    <li class="nav-item">
+                        <a href="./home-rh.html" class="nav-link text-white" id="selecionada" >
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline" >Home</span>
+                        </a>
+                        <a href="./agendar-ferias-rh.html" class="nav-link text-white">
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Agendar Férias</span>
+                        </a>
+                        <a href="./folha-de-pagamento-rh.html" class="nav-link text-white">
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Folha de Pagamento</span>
+                        </a>
+                        <a href="./pontos-rh.html" class="nav-link text-white">
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Histórico <br> de Pontos</span>
+                        </a>
+                        <a href="./holerite-rh.html" class="nav-link text-white">
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Holerite</span>
+                        </a>
+                        <a href="./rendimentos-rh.html" class="nav-link text-white">
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Informe de Rendimentos</span>
+                        </a>
+                        <a href="./beneficios-rh.html" class="nav-link text-white">
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Benefícios</span>
+                        </a>
+
+                    <div class="dropdown ">
+                        <button class="btn btn-primary dropdown-toggle" style="font-size: 20px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Funcionário
+                        </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 150px;">
+                                <a class="dropdown-item" href="./dados-funcionario-rh.html">Consultar Funcionário</a>
+                                <a class="dropdown-item" href="./cadastrar-funcionario-rh.html">Cadastrar Funcionário</a>
+                                <a class="dropdown-item" href="./alterar-funcionario-rh.html">Alterar Funcionário</a>
+                                <a class="dropdown-item" href="./demitir-funcionario-rh.html">Excluir Funcionário</a>
+                            </div>
+                     </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div><!--fim navegação lateral-->
+
+            <section id="conteudos" class="col-md-10 offset-md-2 ml-5" ><!--inicio conteudos-->
+                <div class="col-md-10 offset-md-4 mb-5">
                     <p class="display-4">Bem vindo [Funcionário]!<i class="fa-regular fa-circle-user fa-md"></i></p>
                 </div>
                     
-                <div class="col-md-10 d-flex  text-center offset-md-1">
+                <div class="col-md-12 offset-md-2 d-flex text-center">
                     <div class="col-md-3 card bg-primary text-white mr-5 p-5">
                         <h5 class="card-title">Ultímo Registro</h5>
                         <p class="card-text">00:00</p>
@@ -110,13 +120,13 @@
                         <p class="card-text">00:00</p>
                     </div>
     
-                    <div class="col-md-4 card bg-primary text-white p-5">
+                    <div class="col-md-3 card bg-primary text-white p-5">
                         <h5 class="card-title">Segunda-Feira <br> 00/00/00</h5>
                         <p class="card-text">00:00</p>
                     </div>
                 </div>
     
-                <button class="btn btn-primary col-md-5 offset-md-3 p-3 mt-5" id="btn-ponto">
+                <button class="btn btn-primary col-md-4 offset-md-5 p-3 mt-5" id="btn-ponto">
                     <i class="fa-solid fa-user-clock fa-2xl mr-2" style="color: #ffffff;"></i>
                     <span>BATER PONTO</span>
                 </button>
@@ -127,6 +137,7 @@
 </div><!--fim container-->
 
     <!-- JavaScript (Opcional) -->
+    <script src="script.js"></script>
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

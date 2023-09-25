@@ -23,6 +23,14 @@
     <header><!-- inicio cabeçalho -->
         <nav class="navbar navbar-expand-sm bg-dark navbar-light ">
             <div class="container">
+
+
+            <div class="float-left" style="margin-inline-start: -150px;">
+                <button class="toggler bg-dark mr-5" id="menu-hamburguer" data-toggle="collapse" data-target="#nav-lateral">
+                    <i class="fa-solid fa-bars fa-2xl " style="color: #ffffff;"></i>
+                </button>            
+            </div>
+               
                 <a href="#" class="navbar-brand">
                     <img src="imagens/logoBarsi.png" width="200">
                 </a>
@@ -49,14 +57,17 @@
     <div class="container-fluid" id="container"><!--inicio container-->
         <div class="row flex-nowrap"><!--grid da pagina-->
         
-            <div class=" bg-primary col-auto col-md-2 min-vh-100 " id="nav-lateral"><!--inicio navegação lateral--> 
+            
+            <div class=" bg-primary col-auto col-md-2 min-vh-100 collapse" id="nav-lateral"><!--inicio navegação lateral--> 
                 <div class="bg-primary p-2 sticky-top">
+    
                     <a id="titulo-menu" class="d-flex mt-1 ml-4 align-itens-center text-white">
-                        <span class="fs-4 d-none d-sm-inline ">MENU</span><br>
+                        <span class="fs-4 d-none d-sm-inline" style="font-size: 30px; font-weight: bold;">MENU</span><br>
                     </a>
 
                     <img src="./imagens/linha-menu.png" class="mr-5">
-                    <ul class="nav nav-pills flex-column mt-1 ">
+
+                    <ul class="nav nav-pills flex-column mt-1">
                         <li class="nav-item">
                             <a href="./home-rh.html" class="nav-link text-white" >
                                 <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline" >Home</span>

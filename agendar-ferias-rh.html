@@ -23,6 +23,13 @@
     <header><!-- inicio cabeçalho -->
         <nav class="navbar navbar-expand-sm bg-dark navbar-light ">
             <div class="container">
+
+                <div class="float-left" style="margin-inline-start: -150px;"><!--btn hamburguer-->
+                    <button class="toggler bg-dark mr-5" id="menu-hamburguer" data-toggle="collapse" data-target="#nav-lateral">
+                        <i class="fa-solid fa-bars fa-2xl " style="color: #ffffff;"></i>
+                    </button>            
+                </div>
+
                 <a href="#" class="navbar-brand">
                     <img src="imagens/logoBarsi.png" width="200">
                 </a>
@@ -48,19 +55,21 @@
 
     <div class="container-fluid" id="container"><!--inicio container-->
         <div class="row flex-nowrap"><!--grid da pagina-->
-            <div class=" bg-primary col-auto col-md-2 min-vh-100 " id="nav-lateral"><!--inicio navegação lateral--> 
+            <div class=" bg-primary col-auto col-md-2 min-vh-100 collapse" id="nav-lateral"><!--inicio navegação lateral--> 
                 <div class="bg-primary p-2 sticky-top">
+    
                     <a id="titulo-menu" class="d-flex mt-1 ml-4 align-itens-center text-white">
-                        <span class="fs-4 d-none d-sm-inline ">MENU</span><br>
+                        <span class="fs-4 d-none d-sm-inline" style="font-size: 30px; font-weight: bold;">MENU</span><br>
                     </a>
-
+    
                     <img src="./imagens/linha-menu.png" class="mr-5">
-                    <ul class="nav nav-pills flex-column mt-1 ">
+    
+                    <ul class="nav nav-pills flex-column mt-1">
                         <li class="nav-item">
                             <a href="./home-rh.html" class="nav-link text-white" >
                                 <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline" >Home</span>
                             </a>
-                            <a href="./agendar-ferias-rh.html" class="nav-link text-white"id="selecionada">
+                            <a href="./agendar-ferias-rh.html" class="nav-link text-white" id="selecionada">
                                 <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Agendar Férias</span>
                             </a>
                             <a href="./folha-de-pagamento-rh.html" class="nav-link text-white">
@@ -78,26 +87,27 @@
                             <a href="./beneficios-rh.html" class="nav-link text-white">
                                 <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Benefícios</span>
                             </a>
-                            <a href="./dados-funcionario-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Dados do Funcionário</span>
-                            </a>
-                            <a href="./cadastrar-colaborador-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Cadastrar Colaborador</span>
-                            </a>
-                            <a href="./alterar-colaborador-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Alterar <br> Colaborador</span>
-                            </a>
-                            <a href="./demitir-colaborador-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Demitir Colaborador</span>
-                            </a>
+    
+                            <div class="dropdown ">
+                                <button class="btn btn-primary dropdown-toggle" style="font-size: 20px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Funcionário
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 150px;">
+                                  <!-- Conteúdo da lista suspensa aqui -->
+                                  <a class="dropdown-item" href="./cadastrar-colaborador-rh.html">Cadastrar Funcionário</a>
+                                  <a class="dropdown-item" href="./alterar-colaborador-rh.html">Alterar Funcionário</a>
+                                  <a class="dropdown-item" href="./demitir-colaborador-rh.html">Excluir Funcionário</a>
+                                </div>
+                              </div>
+    
                         </li>
                     </ul>
                 </div>
             </div><!--fim navegação lateral-->
 
-            <section class="col-md-10" id="conteudos"><!--inicio conteudos-->
+            <section class="col-md-12" style="margin-left: 10px;" id="conteudos"><!--inicio conteudos-->
 
-                <div class="col-md-5 offset-md-1"><!--btn colaborador-->           
+                <div class="col-md-5 mr-5"><!--btn colaborador-->           
                         <select class="form-control mt-5 bg-primary text-white" id="colaborador">
                             <option label="Colaborador:"></option>
                             <option></option>
@@ -107,7 +117,7 @@
                         </select>
                 </div>
 
-                <div class="col-md-10 offset-md-1"><!--inico form ferias agendadas-->
+                <div class="col-md-10"><!--inico form ferias agendadas-->
                     <div class="form-group card mt-5 border-dark">
                         <div class="card-header text-center">Férias agendadas:</div>    
                             <form class="form-row pt-2 pb-4" id="form-dados-funcionario ">
@@ -126,7 +136,7 @@
                     </div>
                 </div><!--fim form ferias agendadas-->
 
-                <div class="col-md-10 offset-md-1"><!--inicio form agendamento de ferias-->
+                <div class="col-md-10"><!--inicio form agendamento de ferias-->
                     <div class="form-group card mt-5 border-dark">
                         <div class="card-header text-center">Agendamento de Férias:</div>
                            <div class="col-md-11  mt-4 d-flex align-itens-center">
