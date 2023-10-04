@@ -14,9 +14,10 @@
 
     <!--Font awesome-->
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+<!--icone do navegador-->
+<link rel="icon" type="image/x-icon" href="./imagens/logoBarsi-B.png">
 
-
-    <title>Dados do Funcionário - RH</title>
+    <title>Alterar Funcionário - RH</title>
   </head>
   <body>
     
@@ -38,7 +39,7 @@
                 <ul class="navbar-nav ml-auto">
                    
                     <li id="titulo-pagina" class="nav-item" >
-                        <p class=" text-white ">Dados do Funcionário</p>
+                        <p class=" text-white ">Alterar Funcionário</p>
                     </li>
 
                     <li class="nav-item mt-4">
@@ -59,11 +60,9 @@
         <div class=" bg-primary col-auto col-md-2 min-vh-100 collapse" id="nav-lateral"><!--inicio navegação lateral--> 
             <div class="bg-primary p-2 sticky-top">
 
-                <a id="titulo-menu" class="d-flex mt-1 ml-4 align-itens-center text-white">
+                <a id="titulo-menu" class="d-flex mt-1 ml-4 pl-4 align-itens-center text-white">
                     <span class="fs-4 d-none d-sm-inline" style="font-size: 30px; font-weight: bold;">MENU</span><br>
                 </a>
-
-                <img src="./imagens/linha-menu.png" class="mr-5">
 
                 <ul class="nav nav-pills flex-column mt-1">
                     <li class="nav-item">
@@ -82,23 +81,25 @@
                         <a href="./holerite-rh.html" class="nav-link text-white">
                             <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Holerite</span>
                         </a>
+                        <!--
                         <a href="./rendimentos-rh.html" class="nav-link text-white">
                             <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Informe de Rendimentos</span>
                         </a>
                         <a href="./beneficios-rh.html" class="nav-link text-white">
                             <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Benefícios</span>
                         </a>
+                        -->
 
                     <div class="dropdown ">
-                        <button class="btn btn-primary dropdown-toggle" style="font-size: 20px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-primary dropdown-toggle" style="font-size: 25px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Funcionário
                         </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 150px;">
-                                <a class="dropdown-item" href="./dados-funcionario-rh.html">Consultar Funcionário</a>
-                                <a class="dropdown-item" href="./cadastrar-funcionario-rh.html">Cadastrar Funcionário</a>
-                                <a class="dropdown-item" href="./alterar-funcionario-rh.html">Alterar Funcionário</a>
-                                <a class="dropdown-item" href="./demitir-funcionario-rh.html">Excluir Funcionário</a>
-                            </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 150px;">
+                            <a class="dropdown-item" href="#">Consultar Funcionário</a>
+                            <a class="dropdown-item" href="./cadastrar-funcionario-rh.html">Cadastrar Funcionário</a>
+                            <a class="dropdown-item" href="./alterar-funcionario-rh.html">Alterar Funcionário</a>
+                            <a class="dropdown-item" href="./excluir-funcionario-rh.html">Excluir Funcionário</a>
+                        </div>
                      </div>
 
                     </li>
@@ -107,6 +108,17 @@
         </div><!--fim navegação lateral-->
         
         <section id="formulários"><!--inicio formulários-->
+
+                    <div class="col-md-5 offset-md-2"><!--btn colaborador-->           
+                        <select class="form-control mt-5 bg-primary text-white" id="colaborador">
+                            <option label="funcionário:"></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                    </div>
+
                     <div class="col-md-10 offset-md-1 "><!--inicio formulário dados do funcionário-->
                         <div class="form-group card mt-5 border-dark">
                             <div class="card-header text-center">Informações do Funcionário:</div>
@@ -274,6 +286,12 @@
                                             <option>Gerente</option>
                                         </select>
                                 </div>
+
+                                <div class="col-md-5 ml-4 mr-2 pt-2 pb-2">
+                                    <label for="demitido">demitido:</label>
+                                    <input class="ml-2" type="checkbox">
+                                </div>
+
                             </form>
                         </div>
                     </div><!--fim formulário informações trabalhistas-->

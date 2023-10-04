@@ -1,28 +1,28 @@
+
+/*mexe no tamanho do titulo da página*/
 #nav-principal li > p {
     font-size: 50px;
 }
 
+
+/* mexe nas páginas que estão selecionadas*/
 .nav-pills li > #selecionada {
     background-color: darkblue;
 }
-
- .nav-pills li > #selecionada {
-    background-color: darkblue;
-}
-
 .nav-pills li a:hover {
     background-color: darkblue;
 }
 
+/*meche no botão do menu */
 #menu-hamburguer {
     margin-right: 10px;
     border: none;
 }
 
 
-
+/*aumenta o tamanho entre cada link no menu*/
 body {
-    line-height: 1.7;
+    line-height: 2.1;
 }
 
 .mr-5 {
@@ -37,8 +37,9 @@ body {
     margin-right: 9rem;
 }
 
+/*menu lateral 1 ao ser ativado desloca o conteudo */
 #nav-lateral a {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 #nav-lateral div > #titulo-menu {
@@ -46,20 +47,20 @@ body {
     font-weight: bold;
 }
 
+/*menu lateral 2 ao ser ativado não desloca o conteudo*/
 #nav-lateral-2 {
     position: absolute;
     z-index: 1;
 }
-
 #nav-lateral-2 a {
-    font-size: 20px;
+    font-size: 24px;
 }
-
 #nav-lateral-2 div > #titulo-menu {
     font-size: 30px;
     font-weight: bold;
 }
 
+/*titulo dos formulários*/
 .card-header {
     font-size: 20px;
 }
@@ -68,6 +69,7 @@ body {
     font-weight: bold;
 }
 
+/*tela de login*/
 #form-login > #bem-vindo {
     font-size: 30px;
     text-align: center;

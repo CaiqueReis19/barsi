@@ -17,7 +17,7 @@
 <!--icone do navegador-->
 <link rel="icon" type="image/x-icon" href="./imagens/logoBarsi-B.png">
 
-    <title>Holerite - RH</title>
+    <title>Excluir Funcionário - RH</title>
   </head>
   <body>
     
@@ -38,8 +38,8 @@
                 <div class="nav navbar-nav" id="nav-principal">
                     <ul class="navbar-nav">
                        
-                        <li id="titulo-pagina" style="margin-right: 100px;" class="nav-item pr-5">
-                            <p class="text-white ">Holerite</p>
+                        <li id="titulo-pagina" class="nav-item">
+                            <p class="text-white ">Excluir Funcionário</p>
                         </li>
     
                         <li class="nav-item mt-4">
@@ -77,7 +77,7 @@
                             <a href="./pontos-rh.html" class="nav-link text-white">
                                 <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Histórico <br> de Pontos</span>
                             </a>
-                            <a href="./holerite-rh.html" class="nav-link text-white" id="selecionada">
+                            <a href="./holerite-rh.html" class="nav-link text-white">
                                 <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Holerite</span>
                             </a>
                             <!--
@@ -89,66 +89,70 @@
                             </a>
                             -->
     
-                            <div class="dropdown ">
-                                <button class="btn btn-primary dropdown-toggle" style="font-size: 25px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Funcionário
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 150px;">
-                                    <a class="dropdown-item" href="#">Consultar Funcionário</a>
-                                    <a class="dropdown-item" href="./cadastrar-funcionario-rh.html">Cadastrar Funcionário</a>
-                                    <a class="dropdown-item" href="./alterar-funcionario-rh.html">Alterar Funcionário</a>
-                                    <a class="dropdown-item" href="./excluir-funcionario-rh.html">Excluir Funcionário</a>
-                                </div>
-                             </div>
+                        <div class="dropdown ">
+                            <button class="btn btn-primary dropdown-toggle" style="font-size: 25px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Funcionário
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 150px;">
+                                <a class="dropdown-item" href="#">Consultar Funcionário</a>
+                                <a class="dropdown-item" href="./cadastrar-funcionario-rh.html">Cadastrar Funcionário</a>
+                                <a class="dropdown-item" href="./alterar-funcionario-rh.html">Alterar Funcionário</a>
+                                <a class="dropdown-item" href="./excluir-funcionario-rh.html">Excluir Funcionário</a>
+                            </div>
+                         </div>
     
                         </li>
                     </ul>
                 </div>
             </div><!--fim navegação lateral-->
 
-            <section class="col-md-12" id="conteudos"><!--inicio conteudos-->
+            <section class="col-md-11" id="conteudos"><!--inicio conteudos-->
 
-                <div class="col-md-10 ml-5 pr-5"><!--inico form holerite-->
+                <div class="col-md-10 ml-5"><!--inico form demitir funcionario-->
                     <div class="form-group card mt-5 border-dark">
-                        <div class="card-header text-center">Selecione o ano e o mês do empregador:</div>    
-                            <form class="form-row pt-2 pb-4" id="form-holerite">
+                        <div class="card-header text-center">Informe o CPF do Funcionário</div>    
+                            <form class="form-row pt-2 pb-4" id="form-demitir-colaborador">
                                 <div class="col-md-11 ml-4 mr-2 pt-2">
-                                    <label for="ano-holerite">Ano:</label>
-                                    <select class="form-control" id="ano-holerite">
-                                        <option>2023</option>
-                                        <option>2022</option>
-                                        <option>2021</option>
-                                        <option>2020</option>
-                                        <option>2019</option>
+                                    <label for="CPF" >CPF:</label>
+                                    <select class="form-control" id="CPF">
+                                        <option>000.000.000-00</option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
                                     </select>
                                 </div>
-                                <div class="col-md-11 ml-4 mr-2 pt-2">
-                                    <label for="mes-holerite">Mês:</label>
-                                    <select class="form-control" id="mes-holerite">
-                                        <option>Janeiro</option>
-                                        <option>Fevereiro</option>
-                                        <option>Março</option>
-                                        <option>Abril</option>
-                                        <option>Maio</option>
-                                        <option>Junho</option>
-                                    </select>
-                                </div>
-                              
-                                <div class="col-md-11 ml-4 mr-2 pt-2">
-                                    <label for="empregador-holerite">Empregador:</label>
-                                    <select class="form-control" id="empregador-holerite">
-                                        <option>BARSI LTDA</option>
-                                        <option>outro</option>
-                                    </select>
-                                </div>
-                            </form>
-                        </div>
-                    </div><!--fim form holerite-->
+                    </div>
+                </div><!--fim form demitir funcionario-->
 
-                    <button class="btn btn-primary col-md-3 offset-md-4 p-3 mt-2" id="btn-pesquisar">
-                        <i class="fa-solid fa-download fa-2xl mr-2" style="color: #ffffff;"></i>
-                        <span>Download</span>
-                    </button> 
+                    <div class="col-md-10 ml-5"><!--inico form demitir funcionario-->
+                        <div class="form-group card mt-5 border-dark">
+                            <div class="card-header text-center">Dados do Funcionário</div>    
+                                <form class="form-row pt-2 pb-4" id="form-holerite">
+                                    <div class="col-md-11 ml-4 mr-2 pt-2">
+                                        <label for="Nome">Nome:</label><br>
+                                        <input type="text" class="col-md-11">
+                                    </div>
+                                    <div class="col-md-11 ml-4 mr-2 pt-2">
+                                        <label for="rg">Registro Geral:</label>
+                                        <input type="text" class="col-md-11">
+                                    </div>
+                                    <div class="col-md-11 ml-4 mr-2 pt-2 mb-4">
+                                        <label for="rg">Data de Demissão:</label>
+                                        <input type="date" class="col-md-11">
+                                    </div>
+                         </div>
+                    </div><!--fim form demitir funcionario-->
+
+                    <button class="btn btn-primary col-md-4 offset-md-3 p-3 mt-4" id="btn-salvar">
+                        <i class="fa-solid fa-user-xmark fa-2xl mr-2" style="color: #ffffff;"></i>
+                        <span>Excluir</span>
+                    </button>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 
             </section><!--fim conteudos-->
         </div><!--fim gid da pagina-->
