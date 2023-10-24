@@ -17,7 +17,7 @@
 <!--icone do navegador-->
 <link rel="icon" type="image/x-icon" href="./imagens/logoBarsi-B.png">
 
-    <title>Histórico de Pontos - RH</title>
+    <title>Histórico de Pontos - Funcionário</title>
   </head>
   <body>
    
@@ -32,19 +32,19 @@
                 </div>
 
 
-                <a href="#" class="navbar-brand">
+                <a href="#" class="navbar-brand d-none d-md-block">
                     <img src="imagens/logoBarsi.png" width="200">
                 </a>
     
                 <div class="nav navbar-nav" id="nav-principal">
                     <ul class="navbar-nav">
                        
-                        <li id="titulo-pagina" class="nav-item ml-5">
+                        <li id="titulo-pagina" class="nav-item ml-5" style="margin-right: 30px;">
                             <p class="text-white ">Pontos</p>
                         </li>
     
                         <li class="nav-item mt-4">
-                            <a href="./tela-login.html" class="btn-lg btn-outline-light ml-4" id="btn-sair">
+                            <a href="./tela-login.html" class="btn-lg btn-outline-light ml-4 d-none d-md-block" id="btn-sair">
                                 <i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #ffffff;"></i>
                             </a>
                         </li>
@@ -62,67 +62,46 @@
                 <div class="bg-primary p-2 sticky-top mb-5">
     
                     <a id="titulo-menu" class="d-flex mt-1 ml-4 pl-4 align-itens-center text-white">
-                        <span class="fs-4 d-none d-sm-inline" style="font-size: 30px; font-weight: bold;">MENU</span><br>
+                        <span class="fs-4" style="font-size: 30px; font-weight: bold;">MENU</span><br>
                     </a>
     
                     <ul class="nav nav-pills flex-column mt-1">
                         <li class="nav-item">
-                            <a href="./home-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline" >Home</span>
+                            <a href="./home-fn.html" class="nav-link text-white"  >
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4" >Home</span>
                             </a>
-                            <a href="./agendar-ferias-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Agendar Férias</span>
+                            <a href="./pontos-fn.html" class="nav-link text-white" id="selecionada">
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Histórico <br> de Pontos</span>
                             </a>
-                            <a href="./folha-de-pagamento-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Folha de Pagamento</span>
+                            
+                            <a href="./holerite-fn.html" class="nav-link text-white">
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Holerite</span>
                             </a>
-                            <a href="./pontos-rh.html" class="nav-link text-white" id="selecionada">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Histórico <br> de Pontos</span>
-                            </a>
-                            <a href="./holerite-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Holerite</span>
-                            </a>
-                            <!--
-                            <a href="./rendimentos-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Informe de Rendimentos</span>
-                            </a>
-                            <a href="./beneficios-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Benefícios</span>
-                            </a>
-                            -->
     
-                            <div class="dropdown ">
-                                <button class="btn btn-primary dropdown-toggle" style="font-size: 25px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Funcionário
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 150px;">
-                                    <a class="dropdown-item" href="./consultar-funcionario-rh.html">Consultar Funcionário</a>
-                                    <a class="dropdown-item" href="./cadastrar-funcionario-rh.html">Cadastrar Funcionário</a>
-                                    <a class="dropdown-item" href="./alterar-funcionario-rh.html">Alterar Funcionário</a>
-                                    <a class="dropdown-item" href="./excluir-funcionario-rh.html">Excluir Funcionário</a>
-                                </div>
-                             </div>
+                            <a href="./consultar-fn.html" class="nav-link text-white">
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Dados Cadastrais</span>
+                            </a>
+    
+                            <a href="./downloadsFerias-fn.html" class="nav-link text-white">
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Consultar Férias</span>
+                            </a>
     
                         </li>
                     </ul>
                 </div>
             </div><!--fim navegação lateral-->
 
-        <section class="col-md" id="conteudos"><!--inicio conteudos-->
+        <section class="col-md pontos" id="conteudos"><!--inicio conteudos-->
 
             <div class="d-flex align-itens-center">
                 <div class="col-md-4 offset-md-1"><!--btn funcionario-->           
                         <select class="form-control mt-5 bg-primary text-white" id="funcionario">
                             <option label="Funcionário:"></option>
-                            <option></option>
-                            <option></option>
-                            <option></option>
-                            <option></option>
                         </select>
                 </div>
 
                 <div class="col-md-4 offset-md-1 mt-3">          
-                    <div class="col-md-12 ml-4 mr-2 pt-2">
+                    <div class="col-md-11 ml-4 mr-2 pt-2">
                         <label for="ferias-agendadas-de">De:</label>
                         <input class="form-control mr-5" type="date" id="ferias-de" placeholder="00/00/00">
                     </div>
@@ -130,61 +109,59 @@
             </div>
 
             <div class="d-flex align-itens-center mt-5">
+               
                 <div class="col-md-4 offset-md-1">
                     <label for="saldo-total">Saldo Total:</label>
                     <input class="form-control mr-5" type="number" id="saldo-total">
                 </div>
+
                 <div class="col-md-4 offset-md-1">          
-                    <div class="col-md-12 ml-4 mr-2">
+                    <div class="col-md-11 ml-4 mr-2">
                         <label for="ferias-agendadas-ate">Até:</label>
                         <input class="form-control mr-5" type="date" id="ferias-ate" placeholder="00/00/00">
                     </div>
                 </div>
             </div>
-
             <div class="col-md-10 offset-md-1">
                 <div class="form-group card bg-primary mt-5 border-dark pt-3 pl-3 pb-3 pr-5">
-                        <div class="d-flex align-itens-center"> 
+                        <div class="datas d-flex align-items-center"> 
                             <div class="col-md-3">
-                                <input class="form-control mr-5" type="datetime-local" id="ferias-ate" placeholder="00/00/00">
+                                <input class="form-control mr-5" type="datetime-local" placeholder="00/00/00" readonly>
                             </div>
                             <div class="col-md-3">
-                                <input class="form-control mr-5" type="datetime-local" id="ferias-ate" placeholder="00/00/00">
+                                <input class="form-control mr-5" type="datetime-local" placeholder="00/00/00" readonly>
                             </div>
                             <div class="col-md-3">
-                                <input class="form-control mr-5" type="datetime-local" id="ferias-ate" placeholder="00/00/00">
+                                <input class="form-control mr-5" type="datetime-local" placeholder="00/00/00" readonly>
                             </div>
                             <div class="col-md-3 mr-2">
-                                <input class="form-control mr-5" type="datetime-local" id="ferias-ate" placeholder="00/00/00">
-                                
+                                <input class="form-control mr-5" type="datetime-local" placeholder="00/00/00" readonly>
                             </div>
-                            <i class="fa-solid fa-pen-clip fa-lg mt-3"></i>
-                        </div>
+                        </div>        
                 </div>  
             </div>
 
             <div class="col-md-10 offset-md-1">
                 <div class="form-group card bg-primary mt-5 border-dark pt-3 pl-3 pb-3 pr-5">
-                        <div class="d-flex align-itens-center"> 
+                        <div class="datas d-flex align-itens-center"> 
                             <div class="col-md-3">
-                                <input class="form-control mr-5" type="datetime-local" id="ferias-ate" placeholder="00/00/00">
+                                <input class="form-control mr-5" type="datetime-local" placeholder="00/00/00" readonly>
                             </div>
                             <div class="col-md-3">
-                                <input class="form-control mr-5" type="datetime-local" id="ferias-ate" placeholder="00/00/00">
+                                <input class="form-control mr-5" type="datetime-local" placeholder="00/00/00" readonly>
                             </div>
                             <div class="col-md-3">
-                                <input class="form-control mr-5" type="datetime-local" id="ferias-ate" placeholder="00/00/00">
+                                <input class="form-control mr-5" type="datetime-local" placeholder="00/00/00" readonly>
                             </div>
                             <div class="col-md-3 mr-2">
-                                <input class="form-control mr-5" type="datetime-local" id="ferias-ate" placeholder="00/00/00">
+                                <input class="form-control mr-5" type="datetime-local" placeholder="00/00/00" readonly>
                                 
                             </div>
-                            <i class="fa-solid fa-pen-clip fa-lg mt-3"></i>
                         </div>
                 </div>  
             </div>
                     
-            <button class="btn btn-primary col-md-4 offset-md-4 p-3 mt-2" id="btn-pesquisar">
+            <button class="btn btn-primary col-md-3 offset-md-4 p-3 mt-2" id="btn-pesquisar">
                 <i class="fa-solid fa-magnifying-glass fa-2xl mr-2" style="color: #ffffff;"></i>
                 <span>Pesquisar</span>
             </button> 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist">
+
+ <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+
+<!--Font awesome-->
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+        <!--icone do navegador-->
+        <link rel="icon" type="image/x-icon" href="./imagens/logoBarsi-B.png">
+
+    <title>Agendar Férias - Funcionário</title>
+  </head>
+  <body>
+    
+    <header><!-- inicio cabeçalho -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-light ">
+            <div class="container">
+
+                <div class="float-left"><!--btn hamburguer-->
+                    <button class="toggler bg-dark mr-5" id="menu-hamburguer" data-toggle="collapse" data-target="#nav-lateral">
+                        <i class="fa-solid fa-bars fa-2xl " style="color: #ffffff;"></i>
+                    </button>            
+                </div>
+
+                <a href="#" class="navbar-brand d-none d-md-block">
+                    <img src="imagens/logoBarsi.png" width="200">
+                </a>
+    
+                <div class="nav navbar-nav" id="nav-principal">
+                    <ul class="navbar-nav">
+                       
+                        <li id="titulo-pagina" class="nav-item pr-5">
+                            <p class="text-white ">Férias</p>
+                        </li>
+    
+                        <li class="nav-item mt-4">
+                            <a href="./tela-login.html" class="btn-lg btn-outline-light ml-4 d-none d-md-block" id="btn-sair">
+                                <i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #ffffff;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>        
+        </nav>
+
+    </header><!-- fim cabeçalho -->
+
+    <div class="container-fluid" id="container"><!--inicio container-->
+        <div class="row flex-nowrap"><!--grid da pagina-->
+            <div class=" bg-primary col-auto col-md-2 min-vh-100 float collapse" id="nav-lateral"><!--inicio navegação lateral--> 
+                <div class="bg-primary p-2 sticky-top mb-5">
+    
+                    <a id="titulo-menu" class="d-flex mt-1 ml-4 pl-4 align-itens-center text-white">
+                        <span class="fs-4" style="font-size: 30px; font-weight: bold;">MENU</span><br>
+                    </a>
+    
+                    <ul class="nav nav-pills flex-column mt-1">
+                        <li class="nav-item">
+                            <a href="./home-fn.html" class="nav-link text-white"  >
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4" >Home</span>
+                            </a>
+                            <a href="./pontos-fn.html" class="nav-link text-white">
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Histórico <br> de Pontos</span>
+                            </a>
+                            
+                            <a href="./holerite-fn.html" class="nav-link text-white" >
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Holerite</span>
+                            </a>
+    
+                            <a href="./consultar-fn.html" class="nav-link text-white">
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Dados Cadastrais</span>
+                            </a>
+    
+                            <a href="./downloadsFerias-fn.html" class="nav-link text-white" id="selecionada">
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Consultar Férias</span>
+                            </a>
+    
+                        </li>
+                    </ul>
+                </div>
+            </div><!--fim navegação lateral-->
+
+            <section class="col-md" style="margin-left: 10px;" id="conteudos"><!--inicio conteudos-->
+
+                <div class="col-md-10 offset-md-1"><!--inico form ferias agendadas-->
+                    <div class="form-group card mt-5 border-dark">
+                        <div class="card-header text-center">Férias Agendadas:</div>    
+                            <form class="form-row pt-2 pb-4" id="form-dados-funcionario ">
+                                <div class="col-md-11 ml-4 mr-2 pt-2">
+                                    <label for="ferias-agendadas">De:</label>
+                                    <input class="form-control mr-5" type="date" id="ferias-de" placeholder="00/00/00" readonly>
+                                </div>
+                                <div class="col-md-11 ml-4 mr-2 pt-2">
+                                    <label for="ferias-agendadas">Até:</label>
+                                    <input class="form-control mr-5" type="date" id="ferias-ate" placeholder="00/00/00" readonly>
+                                </div>
+                    </div>
+                </div><!--fim form ferias agendadas-->
+
+                <button class="btn btn-primary col-md-5 offset-md-3 p-3 mt-5" id="btn-ponto">
+                    <i class="fa-solid fa-gear fa-shake fa-2xl mr-2" style="color: #ffffff;"></i>
+                    <span>DOWNLOAD</span>
+                </button>
+
+                    </div>
+                 </div><!--fim form agendamento de ferias-->
+                 <br>
+                 <br>
+            </section><!--fim conteudos-->
+
+
+        </div><!--fim gid da pagina-->
+    </div><!--fim container-->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

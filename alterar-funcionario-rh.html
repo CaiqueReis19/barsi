@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-light ">
         <div class="container">
 
-            <div class="float-left" style="margin-inline-start: -150px;"><!--btn hamburguer-->
+            <div class="float-left"><!--btn hamburguer-->
                 <button class="toggler bg-dark mr-5" id="menu-hamburguer" data-toggle="collapse" data-target="#nav-lateral">
                     <i class="fa-solid fa-bars fa-2xl " style="color: #ffffff;"></i>
                 </button>            
@@ -38,7 +38,7 @@
             <div class="nav navbar-nav" id="nav-principal">
                 <ul class="navbar-nav ml-auto">
                    
-                    <li id="titulo-pagina" class="nav-item" >
+                    <li id="titulo-pagina" class="nav-item" style="margin-right: -40px;">
                         <p class=" text-white ">Alterar Funcionário</p>
                     </li>
 
@@ -95,7 +95,7 @@
                             Funcionário
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 150px;">
-                            <a class="dropdown-item" href="#">Consultar Funcionário</a>
+                            <a class="dropdown-item" href="./consultar-funcionario-rh.html">Consultar Funcionário</a>
                             <a class="dropdown-item" href="./cadastrar-funcionario-rh.html">Cadastrar Funcionário</a>
                             <a class="dropdown-item" href="./alterar-funcionario-rh.html">Alterar Funcionário</a>
                             <a class="dropdown-item" href="./excluir-funcionario-rh.html">Excluir Funcionário</a>
@@ -296,10 +296,31 @@
                         </div>
                     </div><!--fim formulário informações trabalhistas-->
 
-                    <button class="btn btn-primary col-md-3 offset-md-4 p-3" id="btn-salvar">
+                    <button class="btn btn-primary col-md-3 offset-md-4 p-3" id="btn-alterar" data-toggle="modal" data-target="#Modal">
                         <i class="fa-regular fa-floppy-disk fa-2xl mr-2" style="color: #ffffff;"></i>
-                        <span>Salvar Informações</span>
+                        <span>Alterar Informações</span>
                     </button>
+
+                    <!-- inicio Modal -->
+                    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Modal">Alterar informações do Funcionário  <i class="fa-regular fa-circle-user fa-md"></i></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+                                <div class="modal-body">
+                                    Deseja prosseguir com a alteração dos dados no sistema ?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                                    <button type="button" class="btn btn-primary">Sim</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Fim Modal -->
 
                     <br>
                     <br>

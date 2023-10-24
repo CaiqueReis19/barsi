@@ -18,30 +18,31 @@
     <link rel="icon" type="image/x-icon" href="./imagens/logoBarsi-B.png">
     <title>Home - RH</title>
   </head>
-  <body>
+  <body class="tela-home">
     <header><!-- inicio cabeçalho -->
-        <nav class="navbar navbar-expand-sm bg-dark navbar-light ">
+        <nav class="navbar navbar-expand-md bg-dark navbar-light ">
             <div class="container">
 
-                <div class="float-left" style="margin-inline-start: -150px;"><!--btn hamburguer-->
-                    <button class="toggler bg-dark mr-5" id="menu-hamburguer" data-toggle="collapse" data-target="#nav-lateral-2">
-                        <i class="fa-solid fa-bars fa-2xl " style="color: #ffffff;"></i>
-                    </button>            
-                </div>
 
-                <a href="#" class="navbar-brand">
+            <div class="float-left">
+                <button class="toggler bg-dark mr-5" id="menu-hamburguer" data-toggle="collapse" data-target="#nav-lateral-2">
+                    <i class="fa-solid fa-bars fa-2xl " style="color: #ffffff;"></i>
+                </button>            
+            </div>
+               
+                <a href="#" class="navbar-brand d-none d-md-block" id="logoBarsi">
                     <img src="imagens/logoBarsi.png" width="200">
                 </a>
     
                 <div class="nav navbar-nav" id="nav-principal">
                     <ul class="navbar-nav">
                        
-                        <li id="titulo-pagina" style="margin-right: 150px;" class="nav-item pr-5">
-                            <p class="text-white ">Home - RH</p>
+                        <li id="titulo-pagina" class="nav-item">
+                            <p>Home - RH</p>
                         </li>
     
-                        <li class="nav-item mt-4">
-                            <a href="./tela-login.html" class="btn-lg btn-outline-light ml-4" id="btn-sair">
+                        <li class="nav navbar-nav mt-4">
+                            <a href="./tela-login.html" class="btn-lg btn-outline-light d-none d-md-block" id="btn-sair">
                                 <i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #ffffff;"></i>
                             </a>
                         </li>
@@ -49,8 +50,9 @@
                 </div>
             </div>        
         </nav>
-    
+
     </header><!-- fim cabeçalho -->
+
 
 <div class="container-fluid" id="container"><!--inicio container-->
     <div class="row flex-nowrap"><!--grid da pagina-->
@@ -58,26 +60,27 @@
             <div class="bg-primary p-2 mb-4 sticky-top">
 
                 <a id="titulo-menu" class="d-flex mt-1 ml-4 pl-4 align-itens-center text-white">
-                    <span class="fs-4 d-none d-sm-inline" style="font-size: 30px; font-weight: bold;">MENU</span><br>
+                    <span class="fs-4" style="font-size: 30px; font-weight: bold;">MENU</span><br>
                 </a>
 
                 <ul class="nav nav-pills flex-column mt-4">
                     <li class="nav-item">
                         <a href="./home-rh.html" class="nav-link text-white" id="selecionada" >
-                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline" >Home</span>
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 " >Home</span>
                         </a>
                         <a href="./agendar-ferias-rh.html" class="nav-link text-white">
-                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Agendar Férias</span>
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 ">Agendar Férias</span>
                         </a>
                         <a href="./folha-de-pagamento-rh.html" class="nav-link text-white">
-                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Folha de Pagamento</span>
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 ">Folha de Pagamento</span>
                         </a>
                         <a href="./pontos-rh.html" class="nav-link text-white">
-                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Histórico <br> de Pontos</span>
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 ">Histórico <br> de Pontos</span>
                         </a>
                         <a href="./holerite-rh.html" class="nav-link text-white">
-                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Holerite</span>
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4 ">Holerite</span>
                         </a>
+                        
                         <!--
                         <a href="./rendimentos-rh.html" class="nav-link text-white">
                             <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Informe de Rendimentos</span>
@@ -92,7 +95,7 @@
                                 Funcionário
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 150px;">
-                                <a class="dropdown-item" href="#">Consultar Funcionário</a>
+                                <a class="dropdown-item" href="./consultar-funcionario-rh.html">Consultar Funcionário</a>
                                 <a class="dropdown-item" href="./cadastrar-funcionario-rh.html">Cadastrar Funcionário</a>
                                 <a class="dropdown-item" href="./alterar-funcionario-rh.html">Alterar Funcionário</a>
                                 <a class="dropdown-item" href="./excluir-funcionario-rh.html">Excluir Funcionário</a>
@@ -104,35 +107,60 @@
             </div>
         </div><!--fim navegação lateral-->
 
-            <section id="conteudos" class="col-md-10 offset-md-2 ml-5" ><!--inicio conteudos-->
-                <div class="col-md-10 offset-md-4 mb-5">
-                    <p class="display-4">Bem vindo [Funcionário]!<i class="fa-regular fa-circle-user fa-md"></i></p>
+        <section id="conteudos" class="col-md-10 offset-md-2 ml-5" ><!--inicio conteudos-->
+            <div class="col-md-10 offset-md-4 mt-1 mb-4">
+                <p class="display-4">Bem vindo [Funcionário]!<i class="fa-regular fa-circle-user fa-md"></i></p>
+            </div>
+                
+        
+            <div class="col-md-12 offset-md-2 d-flex text-center">
+                
+                <div class="col-md-3 card bg-primary text-white mr-5 p-5 mb-1">
+                    <h5 class="card-title">Ultimo Registro</h5>
+                    <p class="card-text">00:00</p>
                 </div>
-                    
-                <div class="col-md-12 offset-md-2 d-flex text-center">
-                    <div class="col-md-3 card bg-primary text-white mr-5 p-5">
-                        <h5 class="card-title">Ultimo Registro</h5>
-                        <p class="card-text">00:00</p>
-                    </div>
-    
-                    <div class="col-md-3 card bg-primary text-white mr-5 p-5">
-                        <h5 class="card-title">Horas <br> Extras</h5>
-                        <p class="card-text">00:00</p>
-                    </div>
-    
-                    <div class="col-md-3 card bg-primary text-white p-5">
-                        <h5 class="card-title">Segunda-Feira <br> 00/00/00</h5>
-                        <p class="card-text">00:00</p>
-                    </div>
-                </div>
-    
-                <button class="btn btn-primary col-md-4 offset-md-5 p-3 mt-5" id="btn-ponto">
-                    <i class="fa-solid fa-user-clock fa-2xl mr-2" style="color: #ffffff;"></i>
-                    <span>BATER PONTO</span>
-                </button>
-    
-            </section><!--fim conteudos-->
 
+                <div class="col-md-3 card bg-primary text-white mr-5 p-5 mt-1 mb-1">
+                    <h5 class="card-title">Horas <br> Extras</h5>
+                    <p class="card-text">00:00</p>
+                </div>
+
+                <div class="col-md-3 card bg-primary text-white mr-5 p-5 mt-1">
+                    <h5 class="card-title">Segunda-Feira <br> 00/00/00</h5>
+                    <p class="card-text">00:00</p>
+                </div>
+            </div>
+        
+            
+
+            <button class="btn btn-primary col-md-4 offset-md-5 p-3 mt-5" id="btn-ponto" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa-solid fa-user-clock fa-2xl mr-2" style="color: #ffffff;"></i>
+                <span>BATER PONTO</span>
+            </button>
+
+            <!-- inicio Modal ponto-->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Marcação de Ponto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    Deseja confirmar a marcação de ponto ?
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                    <button type="button" class="btn btn-primary">Sim</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Fim Modal ponto-->
+
+        </section><!--fim conteudos-->
     </div><!--grid da pagina-->
 </div><!--fim container-->
 

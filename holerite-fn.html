@@ -17,7 +17,7 @@
 <!--icone do navegador-->
 <link rel="icon" type="image/x-icon" href="./imagens/logoBarsi-B.png">
 
-    <title>Holerite - RH</title>
+    <title>Holerite - Funcionário</title>
   </head>
   <body>
     
@@ -31,19 +31,19 @@
                     </button>            
                 </div>
 
-                <a href="#" class="navbar-brand">
+                <a href="#" class="navbar-brand d-none d-md-block">
                     <img src="imagens/logoBarsi.png" width="200">
                 </a>
     
                 <div class="nav navbar-nav" id="nav-principal">
                     <ul class="navbar-nav">
                        
-                        <li id="titulo-pagina" style="margin-right: 100px;" class="nav-item pr-5">
+                        <li id="titulo-pagina" class="nav-item">
                             <p class="text-white ">Holerite</p>
                         </li>
     
                         <li class="nav-item mt-4">
-                            <a href="./tela-login.html" class="btn-lg btn-outline-light ml-4" id="btn-sair">
+                            <a href="./tela-login.html" class="btn-lg btn-outline-light ml-4 d-none d-md-block" id="btn-sair">
                                 <i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #ffffff;"></i>
                             </a>
                         </li>
@@ -60,46 +60,29 @@
                 <div class="bg-primary p-2 sticky-top mb-5">
     
                     <a id="titulo-menu" class="d-flex mt-1 ml-4 pl-4 align-itens-center text-white">
-                        <span class="fs-4 d-none d-sm-inline" style="font-size: 30px; font-weight: bold;">MENU</span><br>
+                        <span class="fs-4" style="font-size: 30px; font-weight: bold;">MENU</span><br>
                     </a>
     
                     <ul class="nav nav-pills flex-column mt-1">
                         <li class="nav-item">
-                            <a href="./home-rh.html" class="nav-link text-white"  >
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline" >Home</span>
+                            <a href="./home-fn.html" class="nav-link text-white"  >
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4" >Home</span>
                             </a>
-                            <a href="./agendar-ferias-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Agendar Férias</span>
+                            <a href="./pontos-fn.html" class="nav-link text-white">
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Histórico <br> de Pontos</span>
                             </a>
-                            <a href="./folha-de-pagamento-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Folha de Pagamento</span>
+                            
+                            <a href="./holerite-fn.html" class="nav-link text-white" id="selecionada">
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Holerite</span>
                             </a>
-                            <a href="./pontos-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Histórico <br> de Pontos</span>
-                            </a>
-                            <a href="./holerite-rh.html" class="nav-link text-white" id="selecionada">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Holerite</span>
-                            </a>
-                            <!--
-                            <a href="./rendimentos-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Informe de Rendimentos</span>
-                            </a>
-                            <a href="./beneficios-rh.html" class="nav-link text-white">
-                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4 d-none d-sm-inline">Benefícios</span>
-                            </a>
-                            -->
     
-                            <div class="dropdown ">
-                                <button class="btn btn-primary dropdown-toggle" style="font-size: 25px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Funcionário
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 150px;">
-                                    <a class="dropdown-item" href="./consultar-funcionario-rh.html">Consultar Funcionário</a>
-                                    <a class="dropdown-item" href="./cadastrar-funcionario-rh.html">Cadastrar Funcionário</a>
-                                    <a class="dropdown-item" href="./alterar-funcionario-rh.html">Alterar Funcionário</a>
-                                    <a class="dropdown-item" href="./excluir-funcionario-rh.html">Excluir Funcionário</a>
-                                </div>
-                             </div>
+                            <a href="./consultar-fn.html" class="nav-link text-white">
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Dados Cadastrais</span>
+                            </a>
+    
+                            <a href="./downloadsFerias-fn.html" class="nav-link text-white">
+                                <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Consultar Férias</span>
+                            </a>
     
                         </li>
                     </ul>
@@ -108,11 +91,11 @@
 
             <section class="col-md" id="conteudos"><!--inicio conteudos-->
 
-                <div class="col-md-11 offset-md-1 ml-5 pr-5"><!--inico form holerite-->
+                <div class="col-md-10 offset-md-1 "><!--inico form holerite-->
                     <div class="form-group card mt-5 border-dark">
-                        <div class="card-header text-center">Selecione o ano e o mês do empregador:</div>    
+                        <div class="card-header text-center">Selecione o ano e o mês para a extração do Holerite:</div>    
                             <form class="form-row pt-2 pb-4" id="form-holerite">
-                                <div class="col-md-11 ml-4 mr-2 pt-2">
+                                <div class="col-md-11 ml-4 mr-4 pt-2">
                                     <label for="ano-holerite">Ano:</label>
                                     <select class="form-control" id="ano-holerite">
                                         <option>2023</option>
@@ -122,7 +105,7 @@
                                         <option>2019</option>
                                     </select>
                                 </div>
-                                <div class="col-md-11 ml-4 mr-2 pt-2">
+                                <div class="col-md-11 ml-4 mr-4 pt-2">
                                     <label for="mes-holerite">Mês:</label>
                                     <select class="form-control" id="mes-holerite">
                                         <option>Janeiro</option>
@@ -131,10 +114,16 @@
                                         <option>Abril</option>
                                         <option>Maio</option>
                                         <option>Junho</option>
+                                        <option>Julho</option>
+                                        <option>Agosto</option>
+                                        <option>Setembro</option>
+                                        <option>Outubro</option>
+                                        <option>Novembro</option>
+                                        <option>Dezembro</option>
                                     </select>
                                 </div>
                               
-                                <div class="col-md-11 ml-4 mr-2 pt-2">
+                                <div class="col-md-11 ml-4 mr-4 pt-2">
                                     <label for="empregador-holerite">Empregador:</label>
                                     <select class="form-control" id="empregador-holerite">
                                         <option>BARSI LTDA</option>
@@ -145,12 +134,15 @@
                         </div>
                     </div><!--fim form holerite-->
 
-                    <button class="btn btn-primary col-md-3 offset-md-4 p-3 mt-2" id="btn-pesquisar">
+                    <button class="btn btn-primary col-md-3 offset-md-4 p-3 mt-5" id="btn-pesquisar">
                         <i class="fa-solid fa-download fa-2xl mr-2" style="color: #ffffff;"></i>
                         <span>Download</span>
                     </button> 
 
+                    <br>
+                    <br>    
             </section><!--fim conteudos-->
+            
         </div><!--fim gid da pagina-->
     </div><!--fim container-->
 

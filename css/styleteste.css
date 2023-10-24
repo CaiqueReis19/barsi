@@ -4,6 +4,12 @@
     font-size: 50px;
     font-weight: bold;
     color: white;
+    margin-right: 250px;  
+}
+
+/*mexe na imagem do Barsi*/
+img {
+ margin: 0;
 }
 
 /* mexe nas páginas que estão selecionadas*/
@@ -13,22 +19,18 @@
 .nav-pills li a:hover {
     background-color: darkblue;
 }
-/********************************************/
 
-/*mexe no botão do menu*/
+/*mexe no botão do menu */
 #menu-hamburguer {
     margin-right: 10px;
     border: none;
 }
-/********************************************/
 
 /*aumenta o tamanho entre cada link no menu*/
 body {
     line-height: 2.3;
 }
-/********************************************/
 
-/*Configurações do menu lateral*/
 .mr-5 {
     margin-right: 9rem
 }
@@ -36,18 +38,17 @@ body {
 .nav-item > p {
     margin-right: 9rem;
 }
-/********************************************/
 
 /*menu lateral 1 ao ser ativado desloca o conteudo */
 #nav-lateral a {
     font-size: 24px;
 }
 
+
 #nav-lateral div > #titulo-menu {
     font-size: 30px;
     font-weight: bold;
 }
-/********************************************/
 
 /*menu lateral 2 ao ser ativado não desloca o conteudo*/
 #nav-lateral-2 {
@@ -61,15 +62,16 @@ body {
     font-size: 30px;
     font-weight: bold;
 }
-/********************************************/
 
 /*titulo dos formulários*/
 .card-header {
     font-size: 20px;
 }
+
 #btn-salvar span {
     font-weight: bold;
 }
+
 /*tela de login*/
 #form-login > #bem-vindo {
     font-size: 30px;
@@ -77,98 +79,51 @@ body {
 }
 
 
-/***************************midia queries***************************/
+/*midia queries*/
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
 
-/***************************inicio MQ tela-login***********************/
-.tela-login .row .card {
-    width: 20em;
-    height: 27em;
-    margin-left: 50px;
-}
-.tela-login img {
-    margin-left: 60px;
-}
-/**************************fim MQ tela-login**************************/
+/*inicio MQ tela home*/
+    .tela-home #nav-principal li > p{
+        margin-top: 30px;
+        margin-right: 60px;
+            font-size: 25px;
+        }
 
-/***************************inicio MQ tela home*********************/
-
+        .tela-home #btn-sair.btn-lg {
+            margin-right: 10px;
+        }
     /*alinhamento dos card da tela home na vertical*/
     .tela-home  .d-flex {
             flex-direction: column;
             align-items: center;
+            
         }
     /*tamanho da mensagem bem-vindo funcionario*/
-    .tela-home .display-4 {
+    .tela-home  .display-4 {
             margin-top: 10px;
             font-size: 25px;
         }
         .tela-home button#btn-ponto {
             font-size: 14px;
             padding: 8px 8px;
-            width: 20em;
+            width: 21em;
             height: 50px;
-            margin-left: 5px;
         }
-/***************************fim MQ tela home***************************/
+/*fim MQ tela home*/
 
-/******************inicio MQ tela histórico de pontos******************/
-
-        .pontos div.form-group input {
-            margin: 5px 0 5px 0;
-            text-align: center;
-        }
-
-      .pontos div.datas {
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: flex-start !important;
-        }
-        .d-md-flex {
-            display: flex !important;
-          }
-          .flex-md-column {
-            flex-direction: column !important;
-          }
-
-          .pontos button#btn-pesquisar {
-            font-size: 14px;
-            padding: 8px 8px;
-            width: 20em;
-            height: 50px;
-            margin-left: 50px;
-        }
-
-/******************Fim MQ tela histórico de pontos*********************/
-
-/***************************inicio MQ nav-principal*******************/
-#nav-principal li > p {
-    margin-top: 30px;
-    margin-inline-end: -50px;
-    margin-right: 130px;
-        font-size: 23px;
+/*inicio MQ tela-login*/
+    .tela-login .row .card {
+        width: 20em;
+        height: 27em;
+        margin-left: 30px;
     }
-
-    #nav-lateral {
-        position: absolute;
-        z-index: 1;
+    .tela-login img {
+        margin-left: 60px;
     }
-
-/***************************Fim MQ nav-principal*******************/
-
-/***************************inicio MQ dados cadastrais*******************/
-
-#titulo-pagina .titulo-dados-fn > p {
-    margin-right: 80px;
-}
-
-/***************************inicio MQ dados cadastrais*******************/
-
-
+/*fim MQ tela-login*/
  }
-
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -183,9 +138,6 @@ body {
     .tela-home .d-flex {
         flex-direction: column;
         align-items: center;
-    }
-    .tela-home #conteudos {
-        margin-right: 50px;
     }
  }
 
@@ -212,32 +164,25 @@ body {
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     .tela-home #nav-principal li > p{
         font-size: 40px;
-        margin-right: 30px;
     }
     .tela-home #menu-hamburguer {
         margin-inline-start: -150px;
     }
 
-    .tela-home #menu-hamburguer {
-        margin-inline-start: 50px;
+    /*alinhamento dos card da tela home na vertical*/
+    .tela-home .d-flex {
+        flex-direction: column;
+        align-items: center;
     }
-
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-
-    #titulo-pagina{
-        margin-inline-end: 180px;
-    }
-
-
-     #menu-hamburguer {
+    .tela-home #menu-hamburguer {
         margin-inline-start: -150px;
     }
 
     .tela-login {
         overflow-x: hidden;
     }
-    
  }

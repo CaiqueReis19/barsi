@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Font awesome-->
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+<!--icone do navegador-->
+<link rel="icon" type="image/x-icon" href="./imagens/logoBarsi-B.png">
+
+    <title>Dados Cadastrais</title>
+  </head>
+  <body>
+    
+<header><!-- inicio cabeçalho -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-light ">
+        <div class="container">
+
+            <div class="float-left"><!--btn hamburguer-->
+                <button class="toggler bg-dark mr-5" id="menu-hamburguer" data-toggle="collapse" data-target="#nav-lateral">
+                    <i class="fa-solid fa-bars fa-2xl " style="color: #ffffff;"></i>
+                </button>            
+            </div>
+
+            <a href="#" class="navbar-brand d-none d-md-block">
+                <img src="imagens/logoBarsi.png" width="200">
+            </a>
+
+            <div class="nav navbar-nav" id="nav-principal">
+                <ul class="navbar-nav ml-auto">
+                   
+                    <li id="titulo-pagina" class="titulo-dados-fn nav-item" style="margin-right: -35px;">
+                        <p class=" text-white ">Dados Cadastrais</p>
+                    </li>
+
+                    <li class="nav-item mt-4">
+                        <a href="./tela-login.html" class="btn-lg btn-outline-light ml-4 d-none d-md-block" id="btn-sair">
+                            <i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>        
+    </nav>
+
+</header><!-- fim cabeçalho -->
+
+<div class="container-fluid" id="container"><!--incio container-->
+    <div class="row flex-nowrap"><!--grid da pagina-->
+
+        <div class=" bg-primary col-auto col-md-2 min-vh-100 collapse" id="nav-lateral"><!--inicio navegação lateral--> 
+            <div class="bg-primary p-2 sticky-top">
+
+                <a id="titulo-menu" class="d-flex mt-1 ml-4 pl-4 align-itens-center text-white">
+                    <span class="fs-4" style="font-size: 30px; font-weight: bold;">MENU</span><br>
+                </a>
+
+                <ul class="nav nav-pills flex-column mt-1">
+                    <li class="nav-item">
+                        <a href="./home-fn.html" class="nav-link text-white"  >
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4" >Home</span>
+                        </a>
+                        <a href="./pontos-fn.html" class="nav-link text-white">
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Histórico <br> de Pontos</span>
+                        </a>
+                        
+                        <a href="./holerite-fn.html" class="nav-link text-white">
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Holerite</span>
+                        </a>
+
+                        <a href="./consultar-fn.html" class="nav-link text-white" id="selecionada">
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Dados Cadastrais</span>
+                        </a>
+
+                        <a href="./downloadsFerias-fn.html" class="nav-link text-white">
+                            <i class="fs-5 fa fa-grid2"></i><span class="fs-4">Consultar Férias</span>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div><!--fim navegação lateral-->
+        
+        <section id="formulários"><!--inicio formulários-->
+
+                    <div class="col-md-10 offset-md-1 "><!--inicio formulário dados do funcionário-->
+                        <div class="form-group card mt-5 border-dark">
+                            <div class="card-header text-center">Informações Pessoais:</div>
+                                <form class="form-row pt-2 pb-4" id="form-dados-funcionario ">
+                                    <div class="col-md-6 ml-4 mr-4 pt-2">
+                                        <label for="nome">Nome:</label>
+                                        <input class="form-control mr-5" type="text" id="nome"  readonly>
+                                    </div>
+                                    <div class="col-md-2 ml-4 mr-4 pt-2">
+                                        <label for="nascimento">Data de Nascimento:</label>
+                                        <input class="form-control" type="date" id="nascimento" placeholder="00/00/0000" readonly>
+                                    </div>
+                                    <div class="col-md-4 ml-4 mr-4 pt-2 pb-2">
+                                        <label for="Nacionalidade">Nacionalidade:</label>
+                                        <input class="form-control" id="Nacionalidade" readonly >
+                                        </input>
+                                    </div>
+                                    <div class="col-md-4 ml-4 mr-4 pt-2 pb-2">
+                                        <label for="rg">Registro Geral:</label>
+                                        <input class="form-control mr-5" type="text" id="rg" placeholder="00.000.000-00" readonly>
+                                    </div>
+                                    <div class="col-md-2 ml-4 mr-4 pt-2 pb-2">
+                                        <label for="cpf">CPF:</label>
+                                        <input class="form-control mr-5" type="text" id="rg" placeholder="000.000.000.00" readonly>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!--fim formulário dados do funcionário-->
+
+                    <div class="col-md-10 offset-md-1"> <!--inicio formulário localidade-->  
+                        <div class="form-group card mt-5 mb-5 border-dark">
+                            <div class="card-header text-center">Localidade:</div>
+                            <form class="form-row pt-2 pb-4" id="form-localidade">
+                                <div class="ml-4 mr-4 pt-2">
+                                    <label for="cep">CEP:</label>
+                                    <input class="form-control" type="text" id="cep" placeholder="00000-00" readonly>
+                                </div>
+                                <div class="col-md-8 ml-4 mr-4 pt-2">
+                                    <label for="endereco">Endereço:</label>
+                                    <input class="form-control mr-5" type="text" id="endereco" placeholder="Digite seu Endereço" readonly>
+                                </div>
+                                <div class="col-md-4 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="logradouro">Logradouro:</label>
+                                    <input class="form-control mr-5" type="text" id="logradouro" readonly>
+                                </div>
+                                <div class="col-md-4 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="estado">Estado:</label>
+                                    <input class="form-control" id="estado" readonly></input>
+                                </div>
+                                <div class="col-md-2 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="cidade">Cidade:</label>
+                                    <input class="form-control" id="cidade" readonly></input>
+                                </div>
+                                <div class="col-md-4 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="bairro">Bairro:</label>
+                                    <input class="form-control mr-5" type="text" id="bairro" readonly>
+                                </div>
+                                <div class="col-md-2 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="numero">Número:</label>
+                                    <input class="form-control mr-5" type="number" id="numero" readonly>
+                                </div>
+                                <div class="col-md-4 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="complemento">Complemento:</label>
+                                    <input class="form-control mr-5" type="text" id="complemento" readonly>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!--fim formulário localidade-->
+
+                    <div class="col-md-10 offset-md-1"><!--inicio formulário informações bancárias-->
+                        <div class="form-group card mt-5 mb-5 border-dark">
+                            <div class="card-header text-center">Informações Bancárias:</div>
+                            <form class="form-row pt-2 pb-4" id="inf-bancarias" readonly>
+                                
+                                <div class="col-md-4 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="nome-banco">Nome do Banco:</label>
+                                    <input class="form-control mr-5" type="text" id="nome-banco" readonly>
+                                </div>
+                                <div class="col-md-4 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="cod-banco">Código do Banco:</label>
+                                    <input class="form-control mr-5" type="number" id="cod-banco" readonly>
+                                </div>
+                                <div class="col-md-2 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="agencia">Nº Agencia Bancária:</label>
+                                    <input class="form-control mr-5" type="number" id="agencia" readonly>
+                                </div>
+
+                                <div class="col-md-4 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="conta-bancaria">Conta Bancária:</label>
+                                    <input class="form-control mr-5" type="text" id="conta-bancaria" readonly>
+                                </div>
+                                <div class="col-md-4 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="salario">Salário:</label>
+                                    <input class="form-control mr-5" type="number" id="salario" readonly>
+                                </div>
+                                <div class="col-md-2 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="imposto">Imposto:</label>
+                                    <input class="form-control mr-5" type="number" id="imposto" readonly>
+                                </div>
+
+                                <div class="col-md-2 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="inss">INSS:</label>
+                                    <input class="form-control mr-5" type="number" id="inss" readonly>
+                                </div>
+
+                                <div class="col-md-4 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="salario">FGTS:</label>
+                                    <input class="form-control mr-5" type="number" id="salario" readonly>
+                                </div>
+                                <div class="col-md-4 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="vt">Vale Transporte:</label>
+                                    <input class="form-control mr-5" type="number" id="vt" readonly>
+                                </div>
+                                <div class="col-md-4 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="salario">Vale Alimentação:</label>
+                                    <input class="form-control mr-5" type="number" id="vs" readonly>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!--fim formulário informações bancarias-->
+
+                    <div class="col-md-10 offset-md-1"><!--inicio formulário informações trabalhistas-->
+                        <div class="form-group card mt-5 mb-5 border-dark">
+                            <div class="card-header text-center">Informações Trabalhistas:</div>
+                            <form class="form-row pt-2 pb-4" id="inf-trabalhistas">
+
+                                <div class="col-md-5 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="carga-horaria">Carga Horária:</label>
+                                    <input class="form-control mr-5" type="time" id="carga-horaria" readonly>
+                                </div>
+                                <div class="col-md-5 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="id-departamento">ID do Departamento:</label>
+                                    <input class="form-control mr-5" type="number" id="id-departamento" readonly>
+                                </div>
+
+                                <div class="col-md-5 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="data-admissao">Data de Admissão:</label>
+                                    <input class="form-control mr-5" type="date" id="data-admissao" readonly>
+                                </div>
+                                <div class="col-md-5 ml-4 mr-4 pt-2 pb-2">
+                                    <label for="cargo">Cargo:</label>
+                                        <input class="form-control" id="cargo" readonly></input>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div><!--fim formulário informações trabalhistas-->
+
+                    <br>
+
+        </section><!--fim formulários-->
+    </div><!--grid da pagina-->
+</div><!--fim container-->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

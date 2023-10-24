@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-sm bg-dark navbar-light ">
             <div class="container">
 
-                <div class="float-left" style="margin-inline-start: -150px;"><!--btn hamburguer-->
+                <div class="float-left"><!--btn hamburguer-->
                     <button class="toggler bg-dark mr-5" id="menu-hamburguer" data-toggle="collapse" data-target="#nav-lateral">
                         <i class="fa-solid fa-bars fa-2xl " style="color: #ffffff;"></i>
                     </button>            
@@ -38,7 +38,7 @@
                 <div class="nav navbar-nav" id="nav-principal">
                     <ul class="navbar-nav">
                        
-                        <li id="titulo-pagina" class="nav-item">
+                        <li id="titulo-pagina" class="nav-item" style="margin-right: -40px;">
                             <p class="text-white ">Excluir Funcionário</p>
                         </li>
     
@@ -94,7 +94,7 @@
                                Funcionário
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 150px;">
-                                <a class="dropdown-item" href="#">Consultar Funcionário</a>
+                                <a class="dropdown-item" href="./consultar-funcionario-rh.html">Consultar Funcionário</a>
                                 <a class="dropdown-item" href="./cadastrar-funcionario-rh.html">Cadastrar Funcionário</a>
                                 <a class="dropdown-item" href="./alterar-funcionario-rh.html">Alterar Funcionário</a>
                                 <a class="dropdown-item" href="./excluir-funcionario-rh.html">Excluir Funcionário</a>
@@ -106,13 +106,13 @@
                 </div>
             </div><!--fim navegação lateral-->
 
-            <section class="col-md-11" id="conteudos"><!--inicio conteudos-->
+            <section class="col-md" id="conteudos"><!--inicio conteudos-->
 
-                <div class="col-md-10 ml-5"><!--inico form demitir funcionario-->
+                <div class="col-md-10 offset-md-1"><!--inico form demitir funcionario-->
                     <div class="form-group card mt-5 border-dark">
                         <div class="card-header text-center">Informe o CPF do Funcionário</div>    
                             <form class="form-row pt-2 pb-4" id="form-demitir-colaborador">
-                                <div class="col-md-11 ml-4 mr-2 pt-2">
+                                <div class="col-md-10 ml-4 mr-2 pt-2">
                                     <label for="CPF" >CPF:</label>
                                     <select class="form-control" id="CPF">
                                         <option>000.000.000-00</option>
@@ -125,29 +125,53 @@
                     </div>
                 </div><!--fim form demitir funcionario-->
 
-                    <div class="col-md-10 ml-5"><!--inico form demitir funcionario-->
+                    <div class="col-md-10 offset-md-1 "><!--inicio formulário excluir funcionário-->
                         <div class="form-group card mt-5 border-dark">
-                            <div class="card-header text-center">Dados do Funcionário</div>    
-                                <form class="form-row pt-2 pb-4" id="form-holerite">
-                                    <div class="col-md-11 ml-4 mr-2 pt-2">
-                                        <label for="Nome">Nome:</label><br>
-                                        <input type="text" class="col-md-11">
+                            <div class="card-header text-center">Dados para exclusão do Funcionário:</div>
+                                <form class="form-row pt-2 pb-4" id="form-dados-funcionario ">
+                                    <div class="col-md-10 ml-4 mr-2 pt-2">
+                                        <label for="nome">Nome:</label>
+                                        <input class="form-control mr-5" type="text" id="nome" placeholder="Digite o Nome do Funcionário">
                                     </div>
-                                    <div class="col-md-11 ml-4 mr-2 pt-2">
+                                    
+                                   
+                                    <div class="col-md-10 ml-4 mr-2 pt-2 pb-2">
                                         <label for="rg">Registro Geral:</label>
-                                        <input type="text" class="col-md-11">
+                                        <input class="form-control mr-5" type="text" id="rg" placeholder="00.000.000-00">
                                     </div>
-                                    <div class="col-md-11 ml-4 mr-2 pt-2 mb-4">
-                                        <label for="rg">Data de Demissão:</label>
-                                        <input type="date" class="col-md-11">
+                                    <div class="col-md-10 ml-4 mr-2 pt-2 pb-4">
+                                        <label for="nascimento">Data da demissão:</label>
+                                        <input class="form-control" type="date" id="nascimento" placeholder="00/00/0000">
                                     </div>
-                         </div>
-                    </div><!--fim form demitir funcionario-->
+                                </form>
+                            </div>
+                        </div><!--fim formulário excluir funcionário-->
 
-                    <button class="btn btn-primary col-md-4 offset-md-3 p-3 mt-4" id="btn-salvar">
-                        <i class="fa-solid fa-user-xmark fa-2xl mr-2" style="color: #ffffff;"></i>
-                        <span>Excluir</span>
-                    </button>
+                        <button class="btn btn-primary col-md-3 offset-md-4 p-3" id="btn-salvar" data-toggle="modal" data-target="#Modal">
+                            <i class="fa-solid fa-user-xmark fa-2xl" style="color: #ffffff;"></i>
+                            <span>Excluir Informações</span>
+                        </button>
+    
+                        <!-- inicio Modal -->
+                        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="Modal">Excluir dados do Funcionário  <i class="fa-regular fa-circle-user fa-md"></i></h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Deseja prosseguir com a exclusão dos dados no sistema ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                                        <button type="button" class="btn btn-primary">Sim</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- Fim Modal -->
 
                     <br>
                     <br>
