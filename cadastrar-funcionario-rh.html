@@ -112,13 +112,17 @@
                         <div class="form-group card mt-5 border-dark">
                             <div class="card-header text-center">Informações do Funcionário:</div>
                                 <form class="form-row pt-2 pb-4" id="form-dados-funcionario ">
-                                    <div class="col-md-6 ml-4 mr-2 pt-2">
+                                    <div class="col-md-4 ml-4 mr-2 pt-2">
                                         <label for="nome">Nome:</label>
                                         <input class="form-control mr-5" type="text" id="nome" placeholder="Digite o Nome do Funcionário">
                                     </div>
-                                    <div class="pt-2">
+                                    <div class=" col-md-4 pt-2 ml-4 mr-2 pt-2 pb-2">
                                         <label for="nascimento">Data de Nascimento:</label>
                                         <input class="form-control" type="date" id="nascimento" placeholder="00/00/0000">
+                                    </div>
+                                    <div class=" col-md-2 pt-2 ml-4 mr-2 pt-2 pb-2">
+                                        <label for="nascimento">Dependentes:</label>
+                                        <input class="form-control" type="number" id="dependentes" >
                                     </div>
                                     <div class="col-md-4 ml-4 mr-2 pt-2 pb-2">
                                         <label for="Nacionalidade">Nacionalidade:</label>
@@ -217,32 +221,7 @@
                                     <label for="salario">Salário:</label>
                                     <input class="form-control mr-5" type="number" id="salario">
                                 </div>
-                                <div class="col-md-2 ml-4 mr-2 pt-2 pb-2">
-                                    <label for="imposto">Imposto:</label>
-                                    <input class="form-control mr-5" type="number" id="imposto">
-                                </div>
-
-                                <div class="col-md-2 ml-4 mr-2 pt-2 pb-2">
-                                    <label for="inss">INSS:</label>
-                                    <input class="form-control mr-5" type="number" id="inss">
-                                </div>
-                                <div class="col-md-2 ml-4 mr-2 pt-2 pb-2">
-                                    <label for="irss">INSS:</label>
-                                    <input class="form-control mr-5" type="number" id="irss">
-                                </div>
-
-                                <div class="col-md-4 ml-4 mr-2 pt-2 pb-2">
-                                    <label for="salario">FGTS:</label>
-                                    <input class="form-control mr-5" type="number" id="salario">
-                                </div>
-                                <div class="col-md-4 ml-4 mr-2 pt-2 pb-2">
-                                    <label for="vt">Vale Transporte:</label>
-                                    <input class="form-control mr-5" type="number" id="vt">
-                                </div>
-                                <div class="col-md-4 ml-4 mr-2 pt-2 pb-2">
-                                    <label for="salario">Vale Alimentação:</label>
-                                    <input class="form-control mr-5" type="number" id="vs">
-                                </div>
+                                
                             </form>
                         </div>
                     </div><!--fim formulário informações bancarias-->

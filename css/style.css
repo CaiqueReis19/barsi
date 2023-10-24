@@ -141,30 +141,32 @@ body {
             margin-left: 50px;
         }
 
+       
+
 /******************Fim MQ tela histórico de pontos*********************/
 
 /***************************inicio MQ nav-principal*******************/
-#nav-principal li > p {
-    margin-top: 30px;
-    margin-inline-end: -50px;
-    margin-right: 130px;
+    #nav-principal li > p {
+        margin-top: 30px;
+        margin-inline-end: -50px;
+        margin-right: 125px;  
         font-size: 23px;
-    }
+        }
 
     #nav-lateral {
         position: absolute;
         z-index: 1;
     }
 
+    .titulo-pontos > p {
+        margin-right: -3px;
+        }
+
+    #titulo-pagina .titulo-dados-fn > p {
+        margin-right: 80px;
+        }
+
 /***************************Fim MQ nav-principal*******************/
-
-/***************************inicio MQ dados cadastrais*******************/
-
-#titulo-pagina .titulo-dados-fn > p {
-    margin-right: 80px;
-}
-
-/***************************inicio MQ dados cadastrais*******************/
 
 
  }

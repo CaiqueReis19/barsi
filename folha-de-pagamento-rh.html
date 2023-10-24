@@ -110,17 +110,35 @@
 
             <section class="col-md-10 offset-md-2" id="conteudos"><!--inicio conteudos-->
 
-                <div class="col-md-5 offset-md-3"><!--btn funcionario-->           
-                        <select class="form-control mt-5 bg-primary text-white" id="funcionario">
-                            <option label="Funcionário:"></option>
-                            <option></option>
-                            <option></option>
-                            <option></option>
-                            <option></option>
-                        </select>
-                </div>
+                <div class="col-md-10"><!--inicio formulário folha de pagamento-->
+                    <div class="form-group card mt-5 mb-3 border-dark">
+                        <form class="form-row pb-2" id="inf-trabalhistas">
+    
+                            <div class="col-md-6 ml-4 mr-4 pb-2"><!--btn funcionario-->           
+                                <select class="form-control mt-5 bg-primary text-white" id="funcionario">
+                                    <option label="ID do Funcionário:"></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                </select>
+                        </div>
+                            <div class="col-md-5 ml-4 mr-4 pt-2 pb-2">
+                                <label for="ferias-agendadas-de">Data Início:</label>
+                            <input class="form-control mr-5" type="date" id="data-incio" placeholder="00/00/00">
+                            </div>
+                            <div class="col-md-5 ml-4 mr-4 pt-2 pb-2">
+                                <label for="ferias-agendadas-ate">Data Fim:</label>
+                                <input class="form-control mr-5" type="date" id="data-fim" placeholder="00/00/00">
+                            </div>
+    
+                           
+                        </form>
+                    </div>
+                </div><!--fim formulário folha de pagamento-->
+                
 
-                <button class="btn btn-primary col-md-5 offset-md-3 p-3 mt-5" id="btn-ponto">
+                <button class="btn btn-primary col-md-5 offset-md-2 p-3 mt-4" id="btn-ponto">
                     <i class="fa-solid fa-gear fa-shake fa-2xl mr-2" style="color: #ffffff;"></i>
                     <span>GERAR FOLHA</span>
                 </button>
